@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+#contact {
+    background-color: transparent;
+}
+
+.faq {
+    background-color: transparent;
+}
+
+.gallery {
+    background-color: transparent;
+}

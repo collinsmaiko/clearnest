@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClearNest Cleaning — Premium Home & Office Cleaning Services</title>
+  <meta name="description" content="ClearNest Cleaning — professional residential and commercial cleaning. Eco-friendly products, background-checked staff, flexible scheduling and satisfaction guarantee." />
+  <link rel="canonical" href="https://example.com/clearnest" />
+<link rel="stylesheet" href="output.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="ClearNest Cleaning — Premium Home & Office Cleaning Services" />
+  <meta property="og:description" content="Professional residential and commercial cleaning. Eco-friendly, bonded & insured, satisfaction guaranteed." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/clearnest" />
+  <meta property="og:image" content="/og-clearnest.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured data: LocalBusiness (CleaningService) + FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "ClearNest Cleaning",
+        "image": "https://example.com/clearnest/og-clearnest.png",
+        "@id": "https://example.com/clearnest",
+        "url": "https://example.com/clearnest",
+        "telephone": "+1-555-0100",
+        "address": { "@type": "PostalAddress", "streetAddress": "123 Main St", "addressLocality": "Nairobi", "addressRegion": "KE", "postalCode": "00100", "addressCountry": "KE" },
+        "priceRange": "$$",
+        "sameAs": []
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Do you use eco-friendly products?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — we use certified eco-friendly cleaning supplies and offer fragrance-free options." } },
+          { "@type": "Question", "name": "Are your cleaners background checked?", "acceptedAnswer": { "@type": "Answer", "text": "All team members are background-checked, bonded, and insured." } }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CDN -->
+   <link rel="stylesheet" href="input.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--bg:#f8fafc; --card:#ffffff; --muted:#475569; --accent:#059669}
+    [data-theme='dark']{--bg:#071023; --card:#0b1220; --muted:#9aa9b6; --accent:#34d399}
+    body{background:var(--bg); color:var(--muted);} .card{background:var(--card)} .accent{color:var(--accent)} .focus-ring:focus{outline:3px solid rgba(5,150,105,0.12); outline-offset:2px}
+    @media (prefers-reduced-motion: reduce){*{animation:none !important; transition:none !important}}
+  </style>
+
+  <link rel="preload" as="image" href="/images/clearnest-hero.jpg">
+  <meta name="robots" content="index, follow" />
+</head>
+<body class="antialiased text-slate-800">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 bg-opacity-80 backdrop-blur-sm border-b card">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a href="#home" class="flex items-center gap-3">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="text-green-600"><rect width="24" height="24" rx="6" fill="currentColor"/></svg>
+        <span class="font-semibold text-lg">ClearNest</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-600">
+        <a href="#services" class="hover:accent transition focus-ring">Services</a>
+        <a href="#howitworks" class="hover:accent transition focus-ring">How it works</a>
+        <a href="#pricing" class="hover:accent transition focus-ring">Pricing</a>
+        <a href="#testimonials" class="hover:accent transition focus-ring">Testimonials</a>
+        <a href="#contact" class="ml-2 bg-green-600 text-white px-4 py-2 rounded-md shadow-sm hover:bg-green-700">Book Now</a>
+      </nav>
+      <button id="mobileBtn" class="md:hidden p-2 focus-ring" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <div class="p-4 flex flex-col gap-2">
+        <a href="#services" class="p-2 rounded hover:bg-slate-100">Services</a>
+        <a href="#howitworks" class="p-2 rounded hover:bg-slate-100">How it works</a>
+        <a href="#pricing" class="p-2 rounded hover:bg-slate-100">Pricing</a>
+        <a href="#testimonials" class="p-2 rounded hover:bg-slate-100">Testimonials</a>
+        <a href="#contact" class="p-2 rounded bg-green-600 text-white text-center">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="relative overflow-hidden">
+      <div class="container mx-auto grid lg:grid-cols-2 gap-8 items-center py-20 px-6">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">ClearNest — Professional home & office cleaning, done right</h1>
+          <p class="mt-4 text-lg text-slate-600 max-w-xl">Eco-friendly products, vetted professionals, flexible scheduling and a 100% satisfaction guarantee. Trusted by homeowners and businesses.</p>
+
+          <div class="mt-6 flex gap-3 flex-wrap">
+            <a href="#contact" class="bg-green-600 text-white px-5 py-3 rounded-md font-semibold shadow hover:scale-[1.02] transition">Book cleaning</a>
+            <a href="#services" class="border border-slate-200 px-5 py-3 rounded-md hover:bg-slate-50 transition">See services</a>
+          </div>
+
+          <ul class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm text-slate-600">
+            <li>✔ Background-checked staff</li>
+            <li>✔ Eco-friendly supplies</li>
+            <li>✔ Flexible & same-week booking</li>
+          </ul>
+        </div>
+
+        <div class="relative">
+          <div class="card rounded-xl overflow-hidden shadow-2xl img-placeholder">
+            <picture>
+              <source srcset="/images/hero-cleaning.png" type="image/avif">
+              <img src="/images/hero-cleaning.png" alt="Professional cleaner at work" loading="eager" decoding="async" class="w-full h-72 object-cover" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-16 bg-gradient-to-b from-transparent to-white/50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-slate-900">Our Services</h2>
+        <p class="mt-2 text-slate-600 max-w-2xl">From recurring home cleaning to commercial deep cleans and move-in/move-out services.</p>
+
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <article class="p-6 card rounded-lg shadow-sm">
+            <h3 class="font-semibold text-lg">Residential Cleaning</h3>
+            <p class="mt-2 text-sm text-slate-600">Weekly, biweekly, or monthly plans. Tailored checklists and optional add-ons like oven & fridge deep clean.</p>
+          </article>
+
+          <article class="p-6 card rounded-lg shadow-sm">
+            <h3 class="font-semibold text-lg">Commercial Cleaning</h3>
+            <p class="mt-2 text-sm text-slate-600">Office cleaning, retail spaces, and co-working maintenance — reliable crews on recurring schedules.</p>
+          </article>
+
+          <article class="p-6 card rounded-lg shadow-sm">
+            <h3 class="font-semibold text-lg">Move-in / Move-out</h3>
+            <p class="mt-2 text-sm text-slate-600">Thorough cleaning for leases and listings, with inspection-ready results and satisfaction guarantee.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="howitworks" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-slate-900">How it works</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <div class="card p-6 rounded-lg text-center">
+            <h4 class="font-semibold">1. Book online</h4>
+            <p class="mt-2 text-sm text-slate-600">Choose service, date and time in under 60 seconds.</p>
+          </div>
+          <div class="card p-6 rounded-lg text-center">
+            <h4 class="font-semibold">2. We clean</h4>
+            <p class="mt-2 text-sm text-slate-600">Vetted team arrives with supplies and follows your checklist.</p>
+          </div>
+          <div class="card p-6 rounded-lg text-center">
+            <h4 class="font-semibold">3. You review</h4>
+            <p class="mt-2 text-sm text-slate-600">Quality check and 100% satisfaction guarantee.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+<section class="gallery py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">
+      Our Cleaning Gallery
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="overflow-hidden rounded-lg shadow-lg group">
+         <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+             alt="Kitchen Cleaning"
+             class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="overflow-hidden rounded-lg shadow-lg group">
+       <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+             alt="Office Cleaning"
+             class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="overflow-hidden rounded-lg shadow-lg group">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+             alt="Living Room Cleaning"
+             class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="overflow-hidden rounded-lg shadow-lg group">
+       <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+             alt="Bathroom Cleaning"
+             class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="overflow-hidden rounded-lg shadow-lg group">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+             alt="Bedroom Cleaning"
+             class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+      </div>
+
+      <div class="overflow-hidden rounded-lg shadow-lg group">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+             alt="Carpet Cleaning"
+             class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-slate-900">What our customers say</h2>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+          <blockquote class="card p-6 rounded-lg shadow">
+            <p class="text-slate-600">"ClearNest arrived on time and left our home spotless. Their team was professional and friendly."</p>
+            <footer class="mt-3 text-sm text-slate-500">— Sarah L., Homeowner</footer>
+          </blockquote>
+
+          <blockquote class="card p-6 rounded-lg shadow">
+            <p class="text-slate-600">"Our office has never looked better. Reliable team and excellent communication."</p>
+            <footer class="mt-3 text-sm text-slate-500">— BrightCo, Operations</footer>
+          </blockquote>
+
+          <blockquote class="card p-6 rounded-lg shadow">
+            <p class="text-slate-600">"Move-out clean saved our deposit — fantastic attention to detail."</p>
+            <footer class="mt-3 text-sm text-slate-500">— Mark W., Tenant</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-16 bg-gradient-to-t from-transparent to-white/50">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-slate-900">Pricing</h2>
+        <p class="mt-2 text-slate-600 max-w-xl mx-auto">Simple, transparent pricing. Book a one-time clean or save with subscriptions.</p>
+
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+          <div class="card p-6 rounded-lg shadow-sm">
+            <h3 class="font-semibold">One-time</h3>
+            <p class="mt-4 text-3xl font-extrabold">$89 <span class="text-sm font-medium">/starting</span></p>
+            <ul class="mt-4 text-sm text-slate-600 text-left">
+              <li>Up to 2-bed homes</li>
+              <li>Standard checklist</li>
+            </ul>
+            <button class="mt-6 w-full bg-green-600 text-white py-2 rounded">Book One-time</button>
+          </div>
+
+          <div class="card p-6 rounded-lg shadow-xl transform scale-[1.02]">
+            <h3 class="font-semibold">Recurring</h3>
+            <p class="mt-4 text-3xl font-extrabold">$59 <span class="text-sm font-medium">/mo</span></p>
+            <ul class="mt-4 text-sm text-slate-600 text-left">
+              <li>Weekly or biweekly</li>
+              <li>Priority scheduling</li>
+            </ul>
+            <button class="mt-6 w-full bg-green-700 text-white py-2 rounded">Start Recurring</button>
+          </div>
+
+          <div class="card p-6 rounded-lg shadow-sm">
+            <h3 class="font-semibold">Deep Clean</h3>
+            <p class="mt-4 text-3xl font-extrabold">$199 <span class="text-sm font-medium">/one-off</span></p>
+            <ul class="mt-4 text-sm text-slate-600 text-left">
+              <li>Full home deep clean</li>
+              <li>Move-in/move-out ready</li>
+            </ul>
+            <button class="mt-6 w-full border border-green-600 text-green-600 py-2 rounded">Book Deep Clean</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / BOOKING -->
+    <section id="contact" class="py-16 ">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-3xl font-bold text-center text-slate-900">Book your cleaning</h2>
+        <p class="mt-2 text-center text-slate-600">Select service, pick a date & time, and we'll confirm availability.</p>
+
+        <form id="bookForm" class="mt-6 bg-card p-6 rounded-lg shadow" aria-label="Booking form">
+          <label class="block">
+            <span class="text-sm font-medium">Full name</span>
+            <input name="name" required class="mt-1 block w-full border rounded p-3 bg-transparent focus-ring" placeholder="Jane Doe" />
+          </label>
+
+          <div class="grid sm:grid-cols-2 gap-4 mt-4">
+            <label class="block">
+              <span class="text-sm font-medium">Service</span>
+              <select name="service" required class="mt-1 block w-full border rounded p-3 bg-transparent focus-ring">
+                <option value="residential">Residential Cleaning</option>
+                <option value="commercial">Commercial Cleaning</option>
+                <option value="deep">Deep / Move-out</option>
+                <option value="deep">Home Cleaning</option>
+              </select>
+            </label>
+
+            <label class="block">
+              <span class="text-sm font-medium">Email</span>
+              <input name="email" type="email" required class="mt-1 block w-full border rounded p-3 bg-transparent focus-ring" placeholder="you@company.com" />
+            </label>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4 mt-4">
+            <label class="block">
+              <span class="text-sm font-medium">Preferred date</span>
+              <input name="date" type="date" required class="mt-1 block w-full border rounded p-3 bg-transparent focus-ring" />
+            </label>
+
+            <label class="block">
+              <span class="text-sm font-medium">Preferred time</span>
+              <select name="time" required class="mt-1 block w-full border rounded p-3 bg-transparent focus-ring">
+                <option>09:00 AM</option>
+                <option>11:00 AM</option>
+                <option>02:00 PM</option>
+                <option>04:00 PM</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="block mt-4">
+            <span class="text-sm font-medium">Notes (optional)</span>
+            <textarea name="notes" rows="3" class="mt-1 block w-full border rounded p-3 bg-transparent focus-ring" placeholder="Any special instructions"></textarea>
+          </label>
+
+          <div class="mt-6 flex gap-3">
+            <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Request booking</button>
+            <button type="button" id="checklistBtn" class="border px-4 py-2 rounded">Download cleaning checklist</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq py-12 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <h3 class="text-2xl font-semibold">Frequently asked questions</h3>
+        <div class="mt-4 space-y-3">
+          <details class="p-4 border rounded" open>
+            <summary class="cursor-pointer font-medium">What if I'm not satisfied with the clean?</summary>
+            <p class="mt-2 text-slate-600">We offer a 100% satisfaction guarantee — if anything is missed, we re-clean at no charge within 48 hours.</p>
+          </details>
+
+          <details class="p-4 border rounded">
+            <summary class="cursor-pointer font-medium">Do you bring cleaning supplies?</summary>
+            <p class="mt-2 text-slate-600">Yes — our teams bring standard eco-friendly supplies. You can request to use your own on the booking form.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-card border-t mt-12">
+      <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-start gap-6">
+        <div>
+          <a href="#home" class="flex items-center gap-3 mb-3">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="text-green-600"><rect width="24" height="24" rx="6" fill="currentColor"/></svg>
+            <span class="font-bold">ClearNest</span>
+          </a>
+          <p class="text-sm text-slate-600 max-w-sm">Professional cleaning for homes and businesses — eco-friendly, insured, and satisfaction guaranteed.</p>
+        </div>
+        <nav class="flex gap-6">
+          <a href="" class="text-sm hover:underline">Sitemap</a>
+          <a href="" class="text-sm hover:underline">Privacy</a>
+          <a href="" class="text-sm hover:underline">Terms</a>
+        </nav>
+      </div>
+      <div class="border-t py-4 text-center text-sm text-slate-600">© 2025 ClearNest — All rights reserved.</div>
+    </footer>
+  </main>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Mobile menu
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+
+    // Theme preference
+    const storedTheme = localStorage.getItem('clearnest-theme');
+    const getPref = () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    const theme = storedTheme || getPref();
+    document.documentElement.setAttribute('data-theme', theme);
+
+    // Booking form handling (simple client-side validation + simulated submit)
+    document.getElementById('bookForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const f = e.target;
+      const name = f.name.value.trim();
+      const email = f.email.value.trim();
+      const date = f.date.value;
+      const time = f.time.value;
+      if(!name || !email || !date || !time){ alert('Please fill all required fields'); return; }
+      if(email.indexOf('@') === -1){ alert('Please enter a valid email'); return; }
+      const submit = f.querySelector('button[type="submit"]');
+      submit.disabled = true; submit.textContent = 'Requesting…';
+      setTimeout(()=>{ submit.disabled = false; submit.textContent = 'Request booking'; alert('Thanks! Your booking request has been received. We will email confirmation shortly.'); f.reset(); }, 900);
+    });
+
+    // Download cleaning checklist
+    document.getElementById('checklistBtn').addEventListener('click', ()=>{
+      const checklist = `ClearNest Cleaning Checklist
+
+- Dust surfaces
+- Vacuum & mop floors
+- Clean kitchen surfaces & appliances
+- Sanitize bathrooms
+- Empty trash
+- Spot clean windows`;
+      const blob = new Blob([checklist], {type:'text/plain'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'clearnest-checklist.txt'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+  </script>
+
+  <!-- Dev notes: replace placeholder images, add sitemap.xml and robots.txt, set caching headers, and host assets on CDN for best performance -->
+</body>
+</html>
